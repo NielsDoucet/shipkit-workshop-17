@@ -1,8 +1,11 @@
 plugins {
     id 'java'
-    id 'org.shipkit.java' version '2.2.2'
-    id 'org.shipkit.javadoc' version '2.2.2'
+    id 'org.shipkit.java' version '2.2.2' apply false
+    id 'org.shipkit.javadoc' version '2.2.2' apply false
 }
+
+apply plugin: 'org.shipkit.java'
+apply plugin: 'org.shipkit.javadoc'
 
 group 'com.example'
 
